@@ -49,7 +49,8 @@ body, html {
 #WiFi {background-color: orange;}
 #KlientS{background-color: black}
 #Uses{background-color: brown}
-#InOut{background-color: cadetblue}
+#In{background-color: cadetblue}
+#Out{background-color: darkgray}
 </style>
     </head>
     <body>
@@ -59,8 +60,8 @@ body, html {
         <button class="tablink" onclick="openPage('WiFi', this, 'orange')">WiFi</button>
         <button class="tablink" onclick="openPage('KlientS', this, 'black')">Klientserveris</button>
         <button class="tablink" onclick="openPage('Uses', this, 'brown')" id="defaultOpen">Izmantošanas veidi</button>
-        <button class="tablink" onclick="openPage('InOut', this, 'cadetblue')">Iekštīkls un ārtīkls</button>
-        
+        <button class="tablink" onclick="openPage('In', this, 'cadetblue')">Iekštīkls</button>
+        <button class="tablink" onclick="openPage('Out', this, 'darkgray')">Ārtīkls</button>
         <div id="Main" class="tabcontent"><h1>Datortīkli</h1>
         <p>Datortīkls (network) jeb tīkls ir datoru un ar tiem saistīto ierīču grupa, kas savstarpēji savienotas ar sakaru kanāliem un kas nodrošina datņu un citu resursu kopīgas izmantošanas iespējas (resource sharing) vairākiem lietotājiem.</p>
 
@@ -90,7 +91,7 @@ body, html {
 <div id="WiFi" class="tabcontent"><h1>Bezvadu tīkls</h1>
 <p>Bezvadu (wireless) tīkls ir jebkura veida datortīkls, kas nodrošina datu apmaiņu starp datoriem bez vadu palīdzības.</p>
 
-<img src="images/13_01.png">
+<img src="images/13_01.png"></div>
 <div id="KlientS" class="tabcontent">
 <h1>Klientserveris</h1>
 <p>Parasti uzņēmumos datoros tiek glabāta informācija, kurai nepieciešams piekļūt vairākiem darbiniekiem, tāpēc tajos mēdz izmantot klienta-servera modeļus.</p>
@@ -117,22 +118,15 @@ body, html {
 
 <p>Globālais tīmeklis (World Wide Web – WWW), kas ir savstarpēji saistītu hiperteksta dokumentu sistēma, kurai var piekļūt caur internetu. Ar pārlūkprogrammu, izmantojot hipersaites tīmekļa lappusēs, var skatīt tekstu, attēlus un video;</p>
 <p>Elektroniskais pasts (Electronic Mail – e-mail), kas ir elektronisku ziņojumu pārsūtīšanas metode datoru tīklos. Ziņojumi var saturēt ne tikai tekstu, bet arī pievienotas dažāda tipa datnes, piemēram, dokumentus vai attēlus.</p></div>
-<div id="InOut" class="tabcontent"><h1>Iekštīkls un ārtīkls</h1>
-<p>Tā kā globālā tīmekļa lietošana ir ļoti populāra un daudziem datora lietotājiem pazīstama, tā tehnoloģiju plaši izmanto uzņēmumu un institūciju tīklu veidošanā.</p>
-
-<p>Kā globālā tīmekļa tehnoloģiju izmantošanas priekšrocības vēl var minēt:</p>
-
-<p>Pieejama dažāda programmatūra ar zemām izmaksām;</p>
-<p>Var izmantot dažāda tipa datoros ar atšķirīgām operētājsistēmām un pārlūkprogrammām;</p>
-<p>Globālā tīmekļa dokumentiem ir līdzīgs izskats un to vienkārša lietošana.</p>
+<div id="In" class="tabcontent"><h1>Iekštīkls un ārtīkls</h1>
 <p><b>Iekštīkls</b></p>
 
 <p>Iekštīkls (intranet) ir privāts datortīkls, kurā izmanto publiskā interneta un globālā tīmekļa datu pārraides standartus (TCP/IP protokolu) un kurš pieder vienam uzņēmumam vai organizācijai.</p>
 
 <p>No nesankcionētas piekļuves iekštīklu var aizsargāt ar ugunsmūri.</p>
 
-<img src="images/16_01.png">
-
+<img src="images/16_01.png"></div>
+<div id="Out" class="tabcontent">
 <p><b>Ārtīkls</b></p>
 
 <p>Ārtīkls (extranet) ir tāds iekštīkls, kurā ir realizēta ierobežota autorizēta piekļuve arī citiem lietotājiem. Ārējais lietotājs var izmantot ārtīklu tikai tad, ja viņam ir spēkā esošs lietotājvārds un parole. Lietotāja identitāte nosaka, kādiem ārtīkla resursiem viņam ir atļauta piekļuve. Ārtīkli kļūst arvien populārāki informācijas apmaiņā starp darījumu partneriem, piemēram, klientiem un piegādātājiem.</p>
